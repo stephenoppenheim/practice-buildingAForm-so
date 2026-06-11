@@ -76,6 +76,11 @@ fieldset {
     font-size: 1.06rem;
 }
 
+select {
+    height: 30px;
+    font-size: .8rem;
+}
+
 #password {
     width: 100%;
 }

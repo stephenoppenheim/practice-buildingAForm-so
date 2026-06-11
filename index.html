@@ -13,6 +13,15 @@
     <main>
         <form action="/submit" method="POST">
 
+            <fieldset class="form-line">
+                <select name="category" required>
+                    <option value="">Select a feedback category:</option>
+                    <option value="bug">Bug</option>
+                    <option value="feature">Feature Request</option>
+                    <option value="general">General Feedback</option>
+                </select>
+            </fieldset>
+
             <fieldset class="double form-line">
                 <label for="first-name" class="sr-only">First Name</label>
                 <input id="first-name" class="form-input" type="text" name="first-name" placeholder="First Name" required />
