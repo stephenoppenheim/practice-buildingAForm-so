@@ -4,51 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1 class="title">Let Us Know How We're Doing</h1>
-    <form action="/submit" method="POST">
-        <fieldset class="form-line">
-            <label for="first-name" class="sr-only">First Name</label>
-            <input id="first-name" class="form-input" type="text" name="first-name" placeholder="First Name" required />
-            <label for="last-name" class="sr-only">Last Name</label>
-            <input id="last-name" class="form-input" type="text" name="last-name" placeholder="Last Name" required/>
-        </fieldset>
-        <fieldset class="form-line">
-            <label for="email" class="sr-only">Email</label>
-            <input id="email" class="form-input" type="email" name="email" placeholder="Email" required />
-            <label for="phone" class="sr-only">Phone</label>
-            <input id="phone" class="form-input" type="tel" name="phone" placeholder="Phone" required />
-        </fieldset>
-        <fieldset class="form-line">
-            <label for="password" class="sr-only">Password</label>
-            <input id="password" class="form-input" type="password" minlength="8" name="password" placeholder="Password" required />
-        </fieldset>
-        <fieldset class="form-line">
-            <label for="message" class="sr-only">Message</label>
-            <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
-        </fieldset>
-        
-        <fieldset class="form-line">
-            <legend>Preferred Contact Method</legend>
-            <input type="radio" id="email-me" name="contact-method" value="email" checked />
-            <label for="email-me">Email</label>
-            <input type="radio" id="text-me" name="contact-method" value="text" />
-            <label for="text-me">Text</label>
-        </fieldset>
+    <header>
+        <h1 class="title">Let Us Know How We're Doing</h1>
+    </header>
+    <main>
+        <form action="/submit" method="POST">
 
-        <fieldset>
-            <legend>Stay in touch with us:</legend>
-            <input id="account" type="checkbox" name="marketing" value="account" checked />
-            <label for="account">Account Update Emails</label>
-            <input id="promo" type="checkbox" name="marketing" value="promo" checked />
-            <label for="promo">Promo Emails</label>
-            <input id="product" type="checkbox" name="marketing" value="product" checked />
-            <label for="product">Product Update Emails</label>
-            <input id="sms" type="checkbox" name="marketing" value="sms" checked />
-            <label for="sms">Text Updates</label>
-        </fieldset>
-        <button type="submit">Submit</button>
-    </form>
+            <fieldset class="double form-line">
+                <label for="first-name" class="sr-only">First Name</label>
+                <input id="first-name" class="form-input" type="text" name="first-name" placeholder="First Name" required />
+                <label for="last-name" class="sr-only">Last Name</label>
+                <input id="last-name" class="form-input" type="text" name="last-name" placeholder="Last Name" required/>
+            </fieldset>
+
+            <fieldset class="double form-line">
+                <label for="email" class="sr-only">Email</label>
+                <input id="email" class="form-input" type="email" name="email" placeholder="Email" required />
+                <label for="phone" class="sr-only">Phone</label>
+                <input id="phone" class="form-input" type="tel" name="phone" placeholder="Phone" required />
+            </fieldset>
+
+            <fieldset class="form-line">
+                <label for="password" class="sr-only">Password</label>
+                <input id="password" class="form-input" type="password" minlength="8" name="password" placeholder="Password" required />
+            </fieldset>
+
+            <fieldset class="form-line">
+                <label for="message" class="sr-only">Message</label>
+                <textarea id="message" class="form-input" name="message" placeholder="Type your message here..." required></textarea>
+            </fieldset>
+            
+            <fieldset class="c-method form-line">
+                <h4 class="legend">Preferred Contact Method:</h4>
+                <div class="radio">
+                    <input type="radio" id="email-me" name="contact-method" value="email" checked />
+                    <label for="email-me">Email</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="text-me" name="contact-method" value="text" />
+                    <label for="text-me">Text</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="marketing form-line">
+                <h4 class="legend">Stay in touch with us:</h4>
+                <div class="check">
+                    <input id="account" type="checkbox" name="marketing" value="account" checked />
+                    <label for="account">Account Update Emails</label>
+                </div>
+                <div class="check">
+                    <input id="promo" type="checkbox" name="marketing" value="promo" checked />
+                    <label for="promo">Promo Emails</label>
+                </div>
+                <div class="check">
+                    <input id="product" type="checkbox" name="marketing" value="product" checked />
+                    <label for="product">Product Update Emails</label>
+                </div>
+                <div class="check">
+                    <input id="sms" type="checkbox" name="marketing" value="sms" checked />
+                    <label for="sms">Text Updates</label>
+                </div>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    
 </body>
 </html>
